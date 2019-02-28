@@ -1,2 +1,3 @@
-# TriviaGame1
+# TriviaGame
+
 timed trivia game
