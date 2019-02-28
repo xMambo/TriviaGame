@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Trivia Game</title>
+
+  <!-- Added a link to Bootstrap & CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <div class = "container">
+  <h1>X-MEN TRIVIA</h1>
+  <div class="timer">Timer <span id="time">02:00</span></div>
+
+
+  <form id="quiz" name="quiz">
+
+<!-- Multiple choice questions with anwsers -->
+    <p class="questions">What metal alloy has Wolverine's skeleton been reinforced with?</p>
+    <input type="radio" id="mc" name="question1" value="Titanium"> Titanium<br>
+    <input type="radio" id="mc" name="question1" value="Admantium"> Admantium<br>
+    <input type="radio" id="mc" name="question1" value="Vibranium"> Vibranium<br>
+
+
+    <p class="questions">Who is Quicksilver's father?</p>
+    <input type="radio" id="mc" name="question2" value="Professor X"> Professor X<br>
+    <input type="radio" id="mc" name="question2" value="Juggernaut"> Juggernaut<br>
+    <input type="radio" id="mc" name="question2" value="Magneto"> Magneto<br>
+
+
+    <p class="questions">Who is believed to be the first person ever born with the mutant gene?</p>
+    <input type="radio" id="mc" name="question3" value="Apocalypse"> Apocalypse<br>
+    <input type="radio" id="mc" name="question3" value="Storm"> Storm<br>
+    <input type="radio" id="mc" name="question3" value="Cable"> Cable<br>
+
+    <p class="questions">By what name is Victor Creed better known?</p>
+    <input type="radio" id="mc" name="question4" value="Nightcrawler"> Nightcrawler<br>
+    <input type="radio" id="mc" name="question4" value="Havoc"> Havoc<br>
+    <input type="radio" id="mc" name="question4" value="Sabertooth"> Sabertooth<br>
+
+    <p class="questions">What is Jubilee's mutant power?</p>
+    <input type="radio" id="mc" name="question5" value="Phase through walls">Phase through walls<br>
+    <input type="radio" id="mc" name="question5" value="The ability to project pyrotechnics">The ability to project pyrotechnics<br>
+    <input type="radio" id="mc" name="question5" value="Knows how to party"> Knows how to party<br>
+
+
+<!-- Execute check function in JavaScript when a button is clicked: -->
+    <input id="button" type="button" value="Show me what you got!" onclick="check();">
+
+
+  </form>
+
+  <div id="after_submit">
+    <p id="number_correct"></p>
+    <p id="message"></p>
+  </div>
+</div>
+
+</html>
+
+</body>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
